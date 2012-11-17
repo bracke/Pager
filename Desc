@@ -1,0 +1,57 @@
+# StrongEd$Mode = FrontEnd
+# This is a description of the wimp interface for Pager
+
+tool_details_start
+   name          "Pager";
+   command_is    "<Pager$Dir>.Pager2 ";
+   version       "1.04 (2005-03-13)";
+   wimpslot       1400k;
+   has_extended_cmdline;
+tool_details_end
+
+metaoptions_start
+   has_text_window;
+   display_dft_is text;
+metaoptions_end
+
+fileoutput_start
+   output_dft_is produces_output;
+fileoutput_end
+
+dbox_start
+   #icon mappings
+   icons_start
+      icn 4 maps_to string;
+      icn 6 maps_to string;
+      icn 9 maps_to "-U ";
+      icn 2 maps_to "-P ";
+      icn 7 maps_to "-I ";
+      icn 8 maps_to "-L";
+   icons_end
+   
+   #default icon values
+   defaults
+      icn 4 "",
+      icn 6 "",
+      icn 9 on,
+      icn 2 off,
+      icn 7 off,
+      icn 8 off;
+      
+   #drags to dbox (and icon bar)
+   imports_start
+      drag_to icn 4 inserts icn 4;
+      drag_to icn 6 inserts icn 6;
+   imports_end
+dbox_end
+
+deselections_start
+   icn 9 deselects icn 2, icn 7, icn 8;
+   icn 2 deselects icn 9, icn 7, icn 8;
+   icn 7 deselects icn 2, icn 9, icn 8;
+   icn 8 deselects icn 2, icn 7, icn 9;
+deselections_end
+
+order_is
+ icn 9, icn 2,icn 7,icn 8, icn 6, icn 4;
+

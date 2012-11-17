@@ -1,0 +1,11 @@
+Set Pager$Dir <Obey$Dir>
+|
+Set Pager$Help <Pager$Dir>.!Help
+Set Pager$Version "1.04"
+Set Pager$Web "http://www.arcsite.de/hp/bracke/programming/mtools.html"
+Set Pager$Title "Pager"
+Set Pager$Publisher "Bent Bracke"
+Set Pager$Description "Tool for creating paged files, extracting the component files from a paged file and scanning paged files, where a paged file is a file composed of one or more files prefixed by banners."
+|
+IconSprites <Pager$Dir>.!Sprites
+
