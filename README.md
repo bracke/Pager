@@ -2,7 +2,7 @@
 Pager consists of a commandline program 'Pager2' by Richard Conn and a
 frontend (this).
 
-NOTE: This is a RISC OS app.
+NOTE: This is a RISC OS app and will not work on other platforms.
 
 PAGER2 is a tool for creating paged files, extracting the component
 files from a paged file, and scanning paged files, where a paged file is
